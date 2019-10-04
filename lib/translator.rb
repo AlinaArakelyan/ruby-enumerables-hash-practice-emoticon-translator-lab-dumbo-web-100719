@@ -15,10 +15,10 @@ end
 
 def get_japanese_emoticon(file_path, emoticon)
   call = load_library(file_path)[:get_emoticon][emoticon]
-  if [:get_emoticon][emoticon]
-    puts emoticon
-  else puts "Sorry"
-  end 
+  if !call[:get_emoticon][emoticon]
+    puts "sorry"
+  else 
+    puts call
 end
 
 def get_english_meaning
